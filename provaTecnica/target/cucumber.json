@@ -1,0 +1,87 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Realizar uma simulação de investimento na Poupança usando o portal web",
+        "description": "",
+        "id": "simular-investimento;realizar-uma-simulação-de-investimento-na-poupança-usando-o-portal-web",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "que o Associado preenchou o formulario de investimento na poupanca",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Valor que deseja aplicar",
+                  "Valor do investimento mensal",
+                  "Período Mensal"
+                ]
+              },
+              {
+                "cells": [
+                  "100.00",
+                  "50,00",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "100.00",
+                  "50,00",
+                  "12"
+                ]
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "o Associado realizar a simulção",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "deverá exibir na tela o resultado da simulação e as perspectivas dos próximos 4 meses",
+            "match": {},
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Testes_aceitacao"
+          }
+        ]
+      }
+    ],
+    "name": "Simular-Investimento",
+    "description": "  Com o propósito de Simular um Investimento na Poupança\n  como um Associado,\n  eu gostaria de preencher o formulário de simulação\n  e ver a tabela de resultado com Mês e Valor.\n\n  Critério de aceitação:\n  1. O associado preencher todos os campos corretamente e visualizar o formulário de simulação\n  2. O associado preencher o Valor inferior a “20.00” e receber a mensagem de orientação “Valor mínimo de 20.00”.",
+    "id": "simular-investimento",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/provaTecnica/features/simularInvestimento.feature",
+    "tags": [
+      {
+        "name": "@Testes_aceitacao",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

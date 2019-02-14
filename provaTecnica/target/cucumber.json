@@ -3,7 +3,7 @@
     "line": 3,
     "elements": [
       {
-        "line": 14,
+        "line": 12,
         "name": "Realizar uma simulação de investimento na Poupança usando o portal web",
         "description": "",
         "id": "simular-investimento;realizar-uma-simulação-de-investimento-na-poupança-usando-o-portal-web",
@@ -12,11 +12,14 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 144773100,
+              "status": "passed"
             },
-            "line": 15,
+            "line": 13,
             "name": "que o Associado preenchou o formulario de investimento na poupanca",
-            "match": {},
+            "match": {
+              "location": "AssociadoSteps.associadoPreencherFormularioDeInvestimentoNaPoupanca(DataTable)"
+            },
             "rows": [
               {
                 "cells": [
@@ -31,51 +34,121 @@
                   "50,00",
                   "1"
                 ]
-              },
-              {
-                "cells": [
-                  "100.00",
-                  "50,00",
-                  "12"
-                ]
               }
             ],
             "keyword": "Dado "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 269400,
+              "status": "passed"
             },
-            "line": 19,
+            "line": 16,
             "name": "o Associado realizar a simulção",
-            "match": {},
+            "match": {
+              "location": "AssociadoSteps.associadoRealizarSimulcao()"
+            },
             "keyword": "Quando "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 93900,
+              "status": "passed"
             },
-            "line": 20,
-            "name": "deverá exibir na tela o resultado da simulação e as perspectivas dos próximos 4 meses",
-            "match": {},
+            "line": 17,
+            "name": "deverá exibir na tela o resultado da simulação e as perspectivas dos próximos quatro meses",
+            "match": {
+              "location": "AssociadoSteps.exibirResultadoDaSimulaçãoEPerspectivasDosProximosMeses()"
+            },
             "keyword": "Então "
           }
         ],
         "tags": [
           {
-            "name": "@Testes_aceitacao"
+            "name": "@testes_aceitacao_web"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Não conseguir realizar uma simulação com valor menor que R$ 20,00",
+        "description": "",
+        "id": "simular-investimento;não-conseguir-realizar-uma-simulação-com-valor-menor-que-r$-20-00",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 267300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "que o Associado simulou um investimento",
+            "match": {
+              "location": "AssociadoSteps.queOAssociadoSimulouUmInvestimento()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 3119500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "informou o valor de 19,99",
+            "match": {
+              "arguments": [
+                {
+                  "val": "19",
+                  "offset": 20
+                },
+                {
+                  "val": "99",
+                  "offset": 23
+                }
+              ],
+              "location": "AssociadoSteps.informou_o_valor_de_R$(int,int)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 163400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "deverá apresentar a mensagem de “Valor mínimo de 20.00”",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 49
+                },
+                {
+                  "val": "00",
+                  "offset": 52
+                }
+              ],
+              "location": "AssociadoSteps.deveráApresentarAMensagemDeValorMínimoDe(int,int)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testes_aceitacao_web"
           }
         ]
       }
     ],
     "name": "Simular-Investimento",
-    "description": "  Com o propósito de Simular um Investimento na Poupança\n  como um Associado,\n  eu gostaria de preencher o formulário de simulação\n  e ver a tabela de resultado com Mês e Valor.\n\n  Critério de aceitação:\n  1. O associado preencher todos os campos corretamente e visualizar o formulário de simulação\n  2. O associado preencher o Valor inferior a “20.00” e receber a mensagem de orientação “Valor mínimo de 20.00”.",
+    "description": "  Como um Associado, gostaria de preencher o formulário de simulação e ver a tabela de resultado com Mês e Valor.\n  Com o propósito de Simular um Investimento na Poupança.\n\n  Critério de aceitação:\n  O associado preencher todos os campos corretamente e visualizar o formulário de simulação\n  O associado preencher o Valor inferior a “20.00” e receber a mensagem de orientação “Valor mínimo de 20.00”.",
     "id": "simular-investimento",
     "keyword": "Funcionalidade",
     "uri": "src/test/resources/provaTecnica/features/simularInvestimento.feature",
     "tags": [
       {
-        "name": "@Testes_aceitacao",
+        "name": "@testes_aceitacao_web",
         "type": "Tag",
         "location": {
           "line": 2,

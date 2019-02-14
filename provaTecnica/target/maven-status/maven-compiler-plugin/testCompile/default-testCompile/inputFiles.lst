@@ -1,2 +1,3 @@
-C:\prova_tecnica\provaTecnica\src\test\java\provaTecnica\runnerTests\RunCucumberTest.java
-C:\prova_tecnica\provaTecnica\src\test\java\provaTecnica\stepsDefinitions\Stepdefs.java
+C:\prova_tecnica\provaTecnica\src\test\java\provaTecnica\runnerTests\stepsDefinitions\AssociadoSteps.java
+C:\prova_tecnica\provaTecnica\src\test\java\utilitarios\utilsSelenium.java
+C:\prova_tecnica\provaTecnica\src\test\java\runnerTest\RunCucumberTest.java

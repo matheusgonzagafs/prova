@@ -1,0 +1,6 @@
+language: java
+before_script: cd provaTecnica
+script:
+  - mvn test
+jdk:
+  - oraclejdk8

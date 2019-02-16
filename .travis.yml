@@ -1,5 +1,6 @@
+language: java
 before_script: cd provaTecnica
 script:
-  - docker-compose up
-  - docker-compose down
-
+  - mvn test
+jdk:
+  - oraclejdk8

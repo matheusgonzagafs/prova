@@ -1,3 +1,5 @@
-C:\prova_tecnica\provaTecnica\src\test\java\provaTecnica\runnerTests\stepsDefinitions\AssociadoSteps.java
-C:\prova_tecnica\provaTecnica\src\test\java\utilitarios\utilsSelenium.java
-C:\prova_tecnica\provaTecnica\src\test\java\runnerTest\RunCucumberTest.java
+/usr/src/mvn-src/src/test/java/provaTecnica/runnerTests/stepsDefinitions/AssociadoSteps.java
+/usr/src/mvn-src/src/test/java/provaTecnica/runnerTests/pageObjects/SimuladorPoupancaElementMap.java
+/usr/src/mvn-src/src/test/java/provaTecnica/runnerTests/utilitarios/UtilsSelenium.java
+/usr/src/mvn-src/src/test/java/provaTecnica/runnerTests/RunCucumberTest.java
+/usr/src/mvn-src/src/test/java/provaTecnica/runnerTests/pageObjects/SimuladorPoupancaPage.java

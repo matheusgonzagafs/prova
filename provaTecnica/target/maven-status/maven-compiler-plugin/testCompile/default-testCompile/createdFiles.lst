@@ -1,0 +1,5 @@
+provaTecnica/runnerTests/RunCucumberTest.class
+provaTecnica/runnerTests/pageObjects/SimuladorPoupancaElementMap.class
+provaTecnica/runnerTests/utilitarios/UtilsSelenium.class
+provaTecnica/runnerTests/stepsDefinitions/AssociadoSteps.class
+provaTecnica/runnerTests/pageObjects/SimuladorPoupancaPage.class

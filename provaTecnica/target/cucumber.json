@@ -3,62 +3,82 @@
     "line": 3,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 5526529700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "UtilsSelenium.beforeScenario()"
+            }
+          }
+        ],
         "line": 12,
         "name": "Realizar uma simulação de investimento na Poupança usando o portal web",
         "description": "",
         "id": "simular-investimento;realizar-uma-simulação-de-investimento-na-poupança-usando-o-portal-web",
+        "after": [
+          {
+            "result": {
+              "duration": 136077800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "UtilsSelenium.afterScenario()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Cenario",
         "steps": [
           {
             "result": {
-              "duration": 144773100,
+              "duration": 738719700,
               "status": "passed"
             },
             "line": 13,
-            "name": "que o Associado preenchou o formulario de investimento na poupanca",
+            "name": "que Associado deseja aplicar 100 reais e investir 50 reais no período de 1 mês",
             "match": {
-              "location": "AssociadoSteps.associadoPreencherFormularioDeInvestimentoNaPoupanca(DataTable)"
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 29
+                },
+                {
+                  "val": "50",
+                  "offset": 50
+                },
+                {
+                  "val": "1",
+                  "offset": 73
+                }
+              ],
+              "location": "AssociadoSteps.queAssociadoDesejaAplicarReaisEInvestirReaisNoPeríodoDeMês(int,int,int)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Valor que deseja aplicar",
-                  "Valor do investimento mensal",
-                  "Período Mensal"
-                ]
-              },
-              {
-                "cells": [
-                  "100.00",
-                  "50,00",
-                  "1"
-                ]
-              }
-            ],
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 269400,
+              "duration": 109480900,
               "status": "passed"
             },
-            "line": 16,
-            "name": "o Associado realizar a simulção",
+            "line": 14,
+            "name": "o Associado realizar a simulação",
             "match": {
-              "location": "AssociadoSteps.associadoRealizarSimulcao()"
+              "location": "AssociadoSteps.oAssociadoRealizarASimulacao()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 93900,
+              "duration": 672030400,
               "status": "passed"
             },
-            "line": 17,
+            "line": 15,
             "name": "deverá exibir na tela o resultado da simulação e as perspectivas dos próximos quatro meses",
             "match": {
-              "location": "AssociadoSteps.exibirResultadoDaSimulaçãoEPerspectivasDosProximosMeses()"
+              "location": "AssociadoSteps.deveráExibirNaTelaOResultadoDaSimulacaoEAsPerspectivasDosProximosQuatroMeses()"
             },
             "keyword": "Então "
           }
@@ -70,31 +90,53 @@
         ]
       },
       {
-        "line": 20,
+        "before": [
+          {
+            "result": {
+              "duration": 2147291700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "UtilsSelenium.beforeScenario()"
+            }
+          }
+        ],
+        "line": 18,
         "name": "Não conseguir realizar uma simulação com valor menor que R$ 20,00",
         "description": "",
         "id": "simular-investimento;não-conseguir-realizar-uma-simulação-com-valor-menor-que-r$-20-00",
+        "after": [
+          {
+            "result": {
+              "duration": 104232900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "UtilsSelenium.afterScenario()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Cenario",
         "steps": [
           {
             "result": {
-              "duration": 267300,
-              "status": "passed"
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat provaTecnica.runnerTests.stepsDefinitions.AssociadoSteps.associadoSimulouUmInvestimento(AssociadoSteps.java:35)\n\tat ✽.que o Associado simulou um investimento(src/test/resources/provaTecnica/features/simularInvestimento.feature:19)\n",
+              "duration": 8793000,
+              "status": "pending"
             },
-            "line": 21,
+            "line": 19,
             "name": "que o Associado simulou um investimento",
             "match": {
-              "location": "AssociadoSteps.queOAssociadoSimulouUmInvestimento()"
+              "location": "AssociadoSteps.associadoSimulouUmInvestimento()"
             },
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 3119500,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 22,
+            "line": 20,
             "name": "informou o valor de 19,99",
             "match": {
               "arguments": [
@@ -107,16 +149,15 @@
                   "offset": 23
                 }
               ],
-              "location": "AssociadoSteps.informou_o_valor_de_R$(int,int)"
+              "location": "AssociadoSteps.informouValor(int,int)"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 163400,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 23,
+            "line": 21,
             "name": "deverá apresentar a mensagem de “Valor mínimo de 20.00”",
             "match": {
               "arguments": [
@@ -129,7 +170,7 @@
                   "offset": 52
                 }
               ],
-              "location": "AssociadoSteps.deveráApresentarAMensagemDeValorMínimoDe(int,int)"
+              "location": "AssociadoSteps.deveraApresentarMensagemValorMinimo(int,int)"
             },
             "keyword": "Então "
           }
@@ -149,6 +190,82 @@
     "tags": [
       {
         "name": "@testes_aceitacao_web",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Validar retorno da API",
+        "description": "",
+        "id": "simular-investimento-api;validar-retorno-da-api",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat provaTecnica.runnerTests.stepsDefinitions.AssociadoSteps.servicoDeApiEstejaOnline(AssociadoSteps.java:50)\n\tat ✽.que o serviço de api esteja online(src/test/resources/provaTecnica/features/simularInvestimentoApi.feature:6)\n",
+              "duration": 424200,
+              "status": "pending"
+            },
+            "line": 6,
+            "name": "que o serviço de api esteja online",
+            "match": {
+              "location": "AssociadoSteps.servicoDeApiEstejaOnline()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "realizar a consulta usando o id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 32
+                }
+              ],
+              "location": "AssociadoSteps.realizarConsultandoId(int)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "deverá retornar a resposta com sucesso",
+            "match": {
+              "location": "AssociadoSteps.deveraRetornarRespostaComSucesso()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testes_api"
+          }
+        ]
+      }
+    ],
+    "name": "Simular-Investimento-API",
+    "description": "",
+    "id": "simular-investimento-api",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/provaTecnica/features/simularInvestimentoApi.feature",
+    "tags": [
+      {
+        "name": "@testes_api",
         "type": "Tag",
         "location": {
           "line": 2,

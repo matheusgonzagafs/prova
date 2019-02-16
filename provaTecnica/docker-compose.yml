@@ -1,0 +1,11 @@
+chrome:
+  image: selenium/standalone-chrome
+  
+mvn:
+  image: maven:3.3.9-jdk-8
+  volumes:
+    - ./:/usr/src/mvn-src
+  working_dir: /usr/src/mvn-src
+  command: mvn clean test
+  links:
+    - chrome

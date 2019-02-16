@@ -10,14 +10,12 @@ Funcionalidade:Simular-Investimento
   O associado preencher o Valor inferior a “20.00” e receber a mensagem de orientação “Valor mínimo de 20.00”.
 
   Cenario: Realizar uma simulação de investimento na Poupança usando o portal web
-    Dado que o Associado preenchou o formulario de investimento na poupanca
-      | Valor que deseja aplicar | Valor do investimento mensal | Período Mensal |
-      | 100.00                   | 50,00                        | 1              |
-    Quando o Associado realizar a simulção
+    Dado que Associado deseja aplicar 100 reais e investir 50 reais no período de 1 mês
+    Quando o Associado realizar a simulação
     Então deverá exibir na tela o resultado da simulação e as perspectivas dos próximos quatro meses
 
 
   Cenario: Não conseguir realizar uma simulação com valor menor que R$ 20,00
-     Dado que o Associado simulou um investimento
-     Quando informou o valor de 19,99
-     Então deverá apresentar a mensagem de “Valor mínimo de 20.00”
+    Dado que o Associado simulou um investimento
+    Quando informou o valor de 19,99
+    Então deverá apresentar a mensagem de “Valor mínimo de 20.00”

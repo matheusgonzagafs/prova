@@ -1,4 +1,4 @@
-package runnerTest;
+package provaTecnica.runnerTests;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"pretty", "json:target/cucumber.json"},
         features = "src/test/resources/provaTecnica/features",
-        glue = "provaTecnica.runnerTests.stepsDefinitions",
+        glue = "provaTecnica.runnerTests",
         monochrome = true
 )
 public class RunCucumberTest {
